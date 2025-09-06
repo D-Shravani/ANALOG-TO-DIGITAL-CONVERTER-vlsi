@@ -1,0 +1,5 @@
+module simple_adc (   
+input wire [7:0] analog_in;  // 8-bit input 
+output wire [7:0] digital_out; // 8-bit output)    
+assign digital_out = analog_in; // Direct connection
+end module
