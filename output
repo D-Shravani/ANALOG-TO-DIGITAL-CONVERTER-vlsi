@@ -1,0 +1,5 @@
+Time =    0 | analog_in = 00000000 | digital_out = 00000000
+Time =   10 | analog_in = 00001111 | digital_out = 00001111
+Time =   20 | analog_in = 10101010 | digital_out = 10101010
+Time =   30 | analog_in = 11110000 | digital_out = 11110000
+Time =   40 | analog_in = 11111111 | digital_out = 11111111
