@@ -1,0 +1,19 @@
+module testbench;    
+reg [7:0] analog_in;    
+wire [7:0] digital_out;    
+// Instantiate the ADC module    
+simple_adc uut (        
+  .analog_in(analog_in),       
+  .digital_out(digital_out)
+initial begin        
+$monitor("Time = %0t | analog_in = %b | digital_out = %b",
+ $time, analog_in, digital_out);               
+ // Test different inputs        
+analog_in = 8'b00000000; #10;        
+analog_in = 8'b00001111; #10;       
+analog_in = 8'b10101010; #10;       
+analog_in = 8'b11110000; #10;       
+analog_in = 8'b11111111; #10;        
+$finish;    
+end
+end module
